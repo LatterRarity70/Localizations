@@ -1,0 +1,54 @@
+{
+	"geode": "4.8.0",
+	"early-load": true,
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "lr70.localizations",
+	"name": "Localizations",
+	"version": "v1.0.0",
+	"developer": "LatterRarity70",
+	"description": "Translates game into Russian and other languages",
+	"tags": [ "content", "customization", "api" ],
+	"links": {
+		"source": "https://github.com/LatterRarity70/Localizations",
+		"community": "https://discord.gg/6SxAbk3bTA",
+		"homepage": "https://t.me/LatterRarity70"
+	},
+	"api": { "include": [ "src/include/*.hpp" ] },
+	"dependencies": {
+		"geode.node-ids": {
+			"version": ">=v1.20.0",
+			"importance": "suggested"
+		},
+		"alphalaneous.alphas_geode_utils": {
+			"version": ">=v1.1.5",
+			"importance": "suggested"
+		},
+		"user95401.sprite-frames-unity": {
+			"version": ">=v1.0.0",
+			"importance": "suggested"
+		}
+	},
+	"resources": { "files": [ "resources/*.*", "resources/**/*.*" ] },
+	"settings": {
+		"Disable text translations": {
+			"name": "Disable text translations",
+			"type": "bool",
+			"default": false
+		},
+		"Fix IME Insert Text on Windows": {
+			"name": "Fix IME Insert Text on Windows",
+			"type": "bool",
+			"default": true
+		},
+		"thelangselector": {
+			"type": "custom:thelangselector",
+			"name": "Download language",
+			"default": { "a": "" }
+		}
+	}
+}

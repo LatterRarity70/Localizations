@@ -1,0 +1,7 @@
+*.json		text eol=crlf working-tree-encoding=utf-8
+*.txt		text eol=crlf working-tree-encoding=utf-8
+*.md		text eol=crlf working-tree-encoding=utf-8
+*.fnt		text eol=crlf working-tree-encoding=utf-8
+*.plsit		text eol=crlf working-tree-encoding=utf-8
+*.hpp		text eol=crlf working-tree-encoding=utf-8
+*.cpp		text eol=crlf working-tree-encoding=utf-8
