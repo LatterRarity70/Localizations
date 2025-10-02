@@ -1,5 +1,5 @@
 {
-	"geode": "4.8.0",
+	"geode": "4.9.0",
 	"early-load": true,
 	"gd": {
 		"win": "2.2074",
@@ -9,7 +9,7 @@
 	},
 	"id": "lr70.localizations",
 	"name": "Localizations",
-	"version": "v1.0.0",
+	"version": "v1.0.0-beta",
 	"developer": "LatterRarity70",
 	"description": "Translates game into Russian and other languages",
 	"tags": [ "content", "customization", "api" ],
@@ -42,6 +42,11 @@
 		},
 		"Fix IME Insert Text on Windows": {
 			"name": "Fix IME Insert Text on Windows",
+			"type": "bool",
+			"default": true
+		},
+		"Check for official lang pack updates": {
+			"name": "Check for official lang pack updates",
 			"type": "bool",
 			"default": true
 		},

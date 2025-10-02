@@ -5,6 +5,16 @@
 class $modify(LoadingLayerResourceSetupExt, LoadingLayer) {
 	bool init(bool penis) {
 
+		static CCTexturePack* tp;
+		if (!tp) {
+			tp = new CCTexturePack();
+			tp->m_paths = { 
+				string::pathToString(getMod()->getResourcesDir().parent_path()).c_str()
+			};
+			tp->m_id = "resources"_spr;
+			CCFileUtils::get()->addTexturePack(*tp);
+		}
+
 		CCFileUtils::get()->updatePaths();
 
 		// load prior lang entry
